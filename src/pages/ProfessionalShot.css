@@ -1,0 +1,14 @@
+/* src/pages/ProfessionalShot.css */
+.professional-shot-page {
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .professional-shot-page h1 {
+    font-size: 3rem;
+  }
+  
+  .professional-shot-page p {
+    font-size: 1.2rem;
+    color: #555;
+  }

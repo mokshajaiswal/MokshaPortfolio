@@ -1,0 +1,487 @@
+/* src/pages/Home.css */
+
+/* Main container for the home page content */
+
+.home-main-container {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+
+}
+
+
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto; /* Ensure horizontal centering */ 
+  max-width: 1080px; /* Limit the width to 1080px */
+  box-sizing: border-box; /* Include padding in the width/height */
+  padding-top: 250px; /* Padding for small screens */
+ 
+}
+
+/* Content inside the home page */
+.home-content {
+  width: 100%; /* Full width of the container */
+  text-align: center;
+}
+
+.intro {
+  font-family: 'Hellix';
+  font-style: italic;
+  font-size: 1.25rem;
+  color: #e94e77;
+}
+
+.headline {
+  margin: auto;
+  margin-top: -7px;
+  font-size: 3rem;
+  font-weight: bold;
+  color: black;
+  width: 80%;
+  margin-bottom: 8px;
+  text-align: center;
+  
+}
+
+.subtext {
+  font-size: 1.25rem;
+  color: #666;
+  max-width: 800px;
+  font-weight: regular;
+  font-family: 'Hellix';
+  margin: 0 auto;
+}
+
+.social-links a {
+  margin: 0 8px; /* Add space between the icons */
+}
+
+.social-links img {
+  transition: opacity 0.3s ease;
+}
+
+.social-links img:hover {
+  opacity: 0.8; /* Makes the icon slightly transparent on hover */
+}
+
+/* Additional styles for spacing */
+.social-links {
+  margin-top: 30px; /* Space above and below social links */
+}
+
+.company-logos {
+
+  margin-top: 60px; /* Space above the logos section */
+  display: flex;
+  justify-content: center; /* Center logos */
+  gap: 100px; /* Optional: Space between logos */
+}
+
+
+.company-logo {
+  
+  max-width: 120px; /* Sets a maximum width to prevent large logos */
+  max-height: 60px; /* Ensures the height doesn't stretch */
+  object-fit: contain; /* Maintains the original aspect ratio of the logo */
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition for hover effects */
+  opacity: 0.8; /* Slight transparency by default */
+ 
+  border-radius: 0;
+}
+
+.company-logo:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+  opacity: 1; /* Makes the logo fully visible when hovered */
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center; /* Horizontal centering */
+  align-items: center; /* Vertical centering */
+  height: 100px; /* Adjust the height of the container */
+  width: 100%; /* Make container full width */
+}
+
+
+
+
+
+
+
+.projects-section-container{
+  margin: auto;
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects-section {
+  background-color: #EB7196; /* Pink background similar to the image */
+  padding: 40px 20px;
+  width: 100%;
+  overflow: visible;
+  border-radius: 50px;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.projects-heading {
+  font-family: 'Hellix';
+  display: flex;
+  font-size: 1.6rem;
+  margin:auto;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  gap: 10px;
+  margin: 30px auto 12px auto;
+}
+
+
+.projects-title {
+  font-size: 2.2rem;
+  color: white;
+  font-family: 'Larken';
+  max-width: 600px;
+  margin: auto;
+  margin-bottom: 60px;
+}
+
+.flower-image{
+  transform: scale(0.8);
+}
+
+.projects-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Ensures cards wrap on smaller screens */
+  padding-bottom: 100px;
+}
+
+.projects-card-container{
+  position:absolute;
+  display: flex;
+  gap: 40px;
+}
+
+.project-card {
+  height: 250px;
+  background-color: white;
+  border-radius: 40px;
+  padding: 10px;
+  box-shadow: 0 2px 10px rgba(182, 182, 182, 0.1);
+  text-align: center;
+  width: 220px;
+  border-color: #FFE6EE;
+  border-width: 0.2rem;
+  border-style: solid;
+}
+
+.project-image {
+  width: 100%;
+  height: 150px;
+  border-radius: 30px;
+  margin-bottom: 10px;
+}
+
+.project-name {
+  margin-top: 4px;
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+
+
+
+
+
+
+
+
+
+/* Gallery.css */
+
+
+.gallery-container-main{
+  max-width: 1080px;
+
+}
+
+/* General container and layout settings */
+.gallery-container {
+  margin-top: 200px;
+}
+
+/* Header Styles */
+.gallery-header {
+  font-family: 'Hellix';
+  display: flex;
+  font-size: 1.6rem;
+  margin:auto;
+  align-items: center;
+  justify-content: center;
+  color:#EB7196;
+  gap: 10px;
+  margin: 30px auto 12px auto;
+  
+}
+
+.flower2-image{
+  transform: scale(0.8);
+}
+
+
+.gallery-subheader {
+  font-size: 2.2rem;
+  color: black;
+  align-items: center;
+  font-family: 'larken';
+  max-width: 600px;
+  margin: auto;
+
+}
+
+/* Large box on the left */
+.large-box {
+  background-color: #B6A2D9; /* Light purple background */
+  height: 506px;
+  position: relative;
+  border-color: #DFD2F6;
+  border-style: solid;
+  border-width: 0.4rem;
+  border-radius: 50px;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.pin {
+  object-fit: contain;
+
+  transform: rotate(20deg);
+}
+
+.star2 {
+  object-fit: contain;
+  width: 6%;
+
+  transform: rotate(20deg);
+}
+
+
+.plant {
+  object-fit: contain;
+
+  transform: rotate(20deg);
+}
+
+.bush {
+  object-fit: contain;
+
+  transform: rotate(20deg);
+}
+
+.placeholder-text {
+  margin: auto;
+  font-size: 1.5rem;
+  color: #000000;
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: 'Larken';
+  text-align: center;
+  width: 40%;
+
+}
+
+.videothumbnail{
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 3%; 
+  transform: rotate(2deg);
+  display: flex;
+  width: 85%;
+}
+
+/* Smaller boxes1 on the right */
+.aestheticshot{
+  width: 60%;
+  margin: 0px 0px;
+ 
+
+}
+
+.aesthetic-label{
+ display:flex;
+ flex-direction: column-reverse;
+ padding: 0;
+ 
+
+ 
+}
+
+.arrow{
+  width: 70%;
+  
+}
+
+
+
+.small-box1 {
+  padding: 20px;
+  background-color: #f8f9fa;
+  height: 230px; /* Adjust according to your image dimensions */
+  display: flex;
+  justify-content: center;
+  border-radius: 50px;
+  background-color: #f39b6c;
+  border-color: #ffc5a6;
+  border-style: solid;
+  border-width: 0.4rem;
+  gap: 20px;
+    
+}
+
+
+.small-box2 {
+  position: relative; /* Ensures that stickers can be positioned within this box */
+  padding: 30px;
+  padding-bottom: 38px;
+  background-color: #f8f9fa;
+  height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ffdd67; /* Yellow background */
+  text-align: center;
+  border-radius: 50px;
+  border-color: #fff0b8;
+  border-style: solid;
+  border-width: 0.4rem;
+  
+}
+
+.stickers {
+  position: absolute; /* Enables arbitrary positioning */
+
+  transform: translate(-50%, -50%);
+  transform: rotate(-15deg);
+  z-index: 10;
+}
+
+
+
+.star {
+  width: 48px; /* Adjust the size of the arrow as needed */
+  height: auto;
+  transform: rotate(20deg);
+}
+
+.rainbow {
+  width: 67px; /* Adjust the size of the arrow as needed */
+
+  height: auto;
+}
+
+
+/* Smaller boxes3 on the right */
+.small-box3 {
+  position: relative;
+  padding: 10px;
+  background-color: #f8f9fa;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #99ad6d; /* green background */
+  text-align: center;
+  border-radius: 50px;
+  border-color: #cbd8ad;
+  border-style: solid;
+  border-width: 0.4rem;
+  padding-top: 0px;
+  margin-bottom: 22px;
+
+}
+
+
+
+.work {
+  width: 150px; /* Adjust the size of the arrow as needed */
+  height: auto;
+  transform: rotate(12deg);
+}
+
+.bg-orange {
+  background-color: #f7b267;
+}
+
+.bg-yellow {
+  background-color: #ffdd67;
+}
+
+.bg-green {
+  background-color: #90e09d;
+}
+
+/* Image settings */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Caption text below each image */
+.box-caption {
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: 'Larken';
+  color: black;
+  width: 60%;
+  margin: auto;
+  margin-top: -0.3rem;
+  padding: 0;
+  line-height: 1.5rem;
+
+  
+}
+
+.box-caption1{
+
+  margin-bottom: -0.1rem;
+  line-height: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: 'Larken';
+  color: black;
+}
+
+.headshot{
+  max-height: 100%;
+  width:auto;
+  object-fit: contain;
+}
+
+.passion {
+  object-fit: contain;
+  max-height: 100%;
+  margin: 8px 10px;
+ 
+}
+
+
+
+
+
+
+
+
+

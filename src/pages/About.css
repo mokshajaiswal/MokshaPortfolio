@@ -1,0 +1,126 @@
+/* Container */
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+  padding-top: 170px; /* Add spacing from the top */
+  font-family: 'Helix', sans-serif;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+
+/* Flexbox for heading and headline */
+.heading-headline {
+
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 40px;
+  margin-left: 80px;
+ gap:60px;
+}
+
+/* Heading section (on the left) */
+.heading {
+  padding-top: 10px;
+  gap:0;
+  font-family: 'Hellix';
+  font-weight: 300;
+  display: flex;
+  align-items: flex-start;
+}
+
+.heading-icon {
+  width: 24px;
+  margin: 0 10px;
+}
+
+.heading-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #EB7196; /* Pink color for heading text */
+}
+
+/* Headline section (on the right) */
+.headline-about {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+  max-width: 42%; /* Limit width of the headline for better alignment */
+  text-align: left; /* Align headline text to the right */
+  vertical-align: top;
+  align-items: flex-start;
+}
+
+/* Main content */
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Profile image */
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-image {
+  width: 700px;
+  height: auto;
+
+  margin-bottom: 50px;
+}
+
+/* Text content */
+.text-container {
+  flex: 2;
+  padding-left: 40px;
+}
+
+.description {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #555;
+  font-family: 'hellix';
+  text-align: center;
+}
+
+/* Extra styling for smaller screens */
+@media (max-width: 768px) {
+  .heading-headline {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .headline {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .text-container {
+    padding-left: 0;
+    margin-top: 20px;
+  }
+
+  .profile-image {
+    width: 200px;
+  }
+}
+
+
