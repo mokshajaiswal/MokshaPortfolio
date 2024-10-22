@@ -16,7 +16,7 @@ import PassionShot from './pages/PassionShot';
 
 const App: React.FC = () => {
   
-  const homeRef = useRef<null | HTMLElement>(null); // Ref for the Home page
+  const homeRef = useRef<HTMLDivElement>(null); // Ref for the Home page
   const navigate = useNavigate(); // useNavigate for programmatic navigation
   const location = useLocation(); // useLocation to track the current page
 
