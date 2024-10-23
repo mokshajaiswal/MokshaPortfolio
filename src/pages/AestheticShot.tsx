@@ -23,12 +23,12 @@ const AestheticShot: React.FC = () => {
       {/* Section heading on the left */}
       <div className="heading-a d-flex ">
         <img src={flower3} alt="flower" className="heading-icon-a" />
-        <h2 className="heading-text-a">A Bit About Myself</h2>
+        <h2 className="heading-text-a">The story behind the Aesthetic shot</h2>
         <img src={flower3} alt="flower" className="heading-icon-a" />
       </div>
 
       {/* Headline on the right */}
-      <h1 className="headline-contact">Your Creative Guide to Functional and Aesthetic Digital Products</h1>
+      <h1 className="headline-aesthetic">Embracing Nature near Riverside</h1>
     </div>
     <div className="image-details-container">
       {/* Image Section */}
@@ -47,19 +47,19 @@ const AestheticShot: React.FC = () => {
           <div className="spec-item">
             <img src={cameraIcon} alt="Camera" className="spec-icon" />
             <p>Camera</p>
-            <p><b>1/125s</b></p>
+            <p><b>Motorola edge 40</b></p>
             
           </div>
           <div className="spec-item">
             <img src={focalLengthIcon} alt="Focal Length" className="spec-icon" />
             <p>Focal Length</p>
-            <p><b>1/125s</b></p>
+            <p><b>50mm</b></p>
             
           </div>
           <div className="spec-item">
             <img src={apertureIcon} alt="Aperture" className="spec-icon" />
             <p>Aperture</p>
-            <p><b>1/125s</b></p>
+            <p><b>f/1.4</b></p>
             
           </div>
           <div className="spec-item">
@@ -71,16 +71,17 @@ const AestheticShot: React.FC = () => {
           <div className="spec-item">
             <img src={isoIcon} alt="ISO" className="spec-icon" />
             <p>ISO</p>
-            <p><b>ISO 200</b></p>
+            <p><b>101</b></p>
             
           </div>
           
         </div>
         <ul style={{fontFamily: 'Hellix'}}>
-          <li>Brightness and Contrast Adjustments: Increased to enhance natural lighting.</li>
-          <li>Saturation: Adjusted slightly to bring out the greenery.</li>
-          <li>Vibrance: Enhanced to balance the tones of the scenery.</li>
-          <li>Soft Focus: Applied to the background to create depth and draw attention to the figure and tree.</li>
+          <li>This picture was clicked with an android phone. </li>
+          <li>I wanted to click a soft dreamy look for this picture and thats why decided to click picture with a longer focal length. As this focal length allows me to capture the scene in entirety which includes with the person and the surrounding creating the balanced composition.</li>
+          <li>For aperture I wanted more light into the camera, as there was less light in the environment. </li>
+          <li>As this picture is clicked with hands, and I wanted to prevent any blur or motion from the subject. Also for the shutter speed I wanted enough light while ensuring clarity.</li>
+          <li>This was shot in daylight, thats why low iso maintained a clear and smooth look for the image.</li>
         </ul>
       </div>
 
@@ -88,10 +89,13 @@ const AestheticShot: React.FC = () => {
       <div className="editing-specifications">
         <h2>Editing Specifications</h2>
         <ul>
-          <li>Brightness and Contrast Adjustments: Increased to enhance natural lighting.</li>
-          <li>Saturation: Adjusted slightly to bring out the greenery.</li>
-          <li>Vibrance: Enhanced to balance the tones of the scenery.</li>
-          <li>Soft Focus: Applied to the background to create depth and draw attention to the figure and tree.</li>
+          <li>This picture was edited in affinity photos to enhance the look of the photo and make it more dreamy and little blurry.</li>
+          <li>Increased exposure to brighten the subject or balance the shadows in the trees.</li>
+          <li>Enhanced contrast to give depth to the image, making the subject stand out.</li>
+          <li>Increased saturation or vibrance to emphasize the greens and pinks, making the environment appear greenery.</li>
+          <li>Applied a subtle vignette to focus attention on the center of the image and add drama to the edges.</li>
+          <li>Applied additional blurring to the background using Affinity Photo's "Gaussian Blur" tool or lens blur, to enhance the shallow depth of field effect (in line with f/1.4 aperture).</li>
+          <li>Selective sharpening on the subject to make it stand out while keeping the rest soft and ethereal.</li>
         </ul>
       </div>
 
@@ -99,11 +103,11 @@ const AestheticShot: React.FC = () => {
       <div className="description-section">
         <h2>What the Picture Depicts</h2>
         <p>
-          This photograph is a visual representation of solitude and peaceful reflection. The lone figure by the riverside, 
-          amidst the natural landscape, evokes a sense of calm and introspection. The changing tones of the greenery contrast 
-          subtly with the flowing water, enhancing the peaceful scene. The photograph captures a moment of stillness, highlighting 
-          the beauty of being present in nature.
-        </p>
+        This photo shows a peaceful moment when I can stop and enjoy the beauty around me. I was by the river, and a big tree stood in front of me, framing the view just right. Its branches stretched out above me, casting soft shadows on the ground, and the bright green plants hugged the edge of the river.</p>
+        <p>In the picture, I am wearing a light, flowing dress. I feel calm, just like the still water beside me. Behind me, you can see a bridge in the distance, reminding us that there is a world beyond this quiet place.</p>
+        <p>This image represents the quiet times I can find in nature. Standing still in my dress, I feel the harmony between myself and the natural world. By having my back to the camera, the photo invites you to imagine what I see. It encourages you to think about what is beyond the river and the horizon. It’s a chance for me to pause and find peace in the simple things around me.</p>
+        <p>For me, this picture means calmness and reflection. It shows how connected I am to nature. The soft edges and warm colors were made even better during editing, giving the image a dreamy feel. This scene encourages me to stop for a moment, take a deep breath, and enjoy the beauty of stillness.</p>
+        
       </div>
     </div>
     </div>

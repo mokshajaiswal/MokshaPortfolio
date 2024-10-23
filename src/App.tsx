@@ -13,6 +13,7 @@ import './App.css'; // Custom CSS
 import AestheticShot from './pages/AestheticShot';
 import ProfessionalShot from './pages/ProfessionalShot';
 import PassionShot from './pages/PassionShot';
+import NotFound from './pages/NotFound';
 
 const App: React.FC = () => {
   
@@ -71,7 +72,7 @@ const App: React.FC = () => {
 
   // Handle Home link click
   const handleHomeClick = () => {
-    if (location.pathname === '/') {
+    if (location.pathname === '/' || location.pathname === '/home') {
       // If already on Home, scroll to top
       window.scrollTo({ top: 0, behavior: 'smooth' });
     } else {
@@ -106,9 +107,15 @@ const App: React.FC = () => {
             <ul className="navbar-nav" style={{ padding: '10px 20px' }}>
               <li className="nav-item">
                 {/* Handle Home click */}
-                <NavLink className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')} to="/" style={{cursor: 'pointer'}}>
-                <button className="btn nav-link" onClick={handleHomeClick} style={{ cursor: 'pointer' }}>
-                  {location.pathname === '/' ? (
+                <NavLink
+                  className={({ isActive }) =>
+                    (isActive || location.pathname === '/home') ? 'nav-link active' : 'nav-link'
+                  }
+                  to="/"
+                  style={{ cursor: 'pointer' }}
+                >
+                  <button className="btn nav-link" onClick={handleHomeClick} style={{ cursor: 'pointer' }}>
+                  {location.pathname === '/' || location.pathname === '/home'? (
                     <img src={home} className="home-active"  alt="Home" />
                   ) : (
                     <img src={homeoutline} className="home-inactive" alt="Home" />
@@ -155,6 +162,7 @@ const App: React.FC = () => {
       <div className="main-content" ref={homeRef}>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/experience" element={<Experience />} />
           <Route path="/project" element={<Project />} />
@@ -162,7 +170,11 @@ const App: React.FC = () => {
           <Route path="/aestheticshot" element={<AestheticShot />} />
           <Route path="/professionalshot" element={<ProfessionalShot/>} />
           <Route path="/passionshot" element={<PassionShot/>} />
-        
+        	
+	  {/* Catch-all route to handle unknown routes */}
+          <Route path="*" element={<NotFound />} />
+
+
         </Routes>
       </div>
 

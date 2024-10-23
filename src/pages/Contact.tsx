@@ -19,12 +19,12 @@ const Contact: React.FC = () => {
         {/* Section heading on the left */}
         <div className="heading-c d-flex ">
           <img src={flower3} alt="flower" className="heading-icon-c" />
-          <h2 className="heading-text-c">A Bit About Myself</h2>
+          <h2 className="heading-text-c">Get in touch</h2>
           <img src={flower3} alt="flower" className="heading-icon-c" />
         </div>
 
         {/* Headline on the right */}
-        <h1 className="headline-contact">Your Creative Guide to Functional and Aesthetic Digital Products</h1>
+        <h1 className="headline-contact">Let’s connect and create something extraordinary together!</h1>
       </div>
     
 
