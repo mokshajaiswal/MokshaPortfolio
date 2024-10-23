@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Custom Static Page</title>
+    <title>Custom Static Page with React App on Click</title>
     <style>
       body {
         font-family: Arial, sans-serif;
@@ -27,14 +27,19 @@
       a {
         text-decoration: none;
         color: #007bff;
+        cursor: pointer;
       }
     </style>
+    <script type="module" crossorigin src="/MokshaPortfolio/assets/index-B5Qt9EMX.js"></script>
   </head>
   <body>
     <div class="content">
       <h1>Welcome to My Custom Page!</h1>
-      <p>This is a simple static page that doesn't redirect or load a React app.</p>
-      <a href="https://example.com">Visit Example</a>
+      <p>This is a simple static page that loads the React app when clicked.</p>
+      <a id="loadApp" onclick="loadReactApp()">View Example</a>
     </div>
+
+    <div id="root" style="display: none;"></div> <!-- React app gets injected here, hidden by default -->
+
   </body>
 </html>
