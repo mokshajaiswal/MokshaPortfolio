@@ -3,54 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Custom Static Page with React App on Click</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        background-color: #f0f0f0;
-      }
-      .content {
-        text-align: center;
-      }
-      h1 {
-        color: #333;
-      }
-      p {
-        color: #666;
-      }
-      a {
-        text-decoration: none;
-        color: #007bff;
-        cursor: pointer;
-      }
-    </style>
+    
   </head>
   <body>
-    <div class="content">
-      <h1>Welcome to My Custom Page!</h1>
-      <p>This is a simple static page that loads the React app when clicked.</p>
-      <a id="loadApp" onclick="loadReactApp()">View Example</a>
-    </div>
+    
 
-    <div id="root" style="display: none;"></div> <!-- React app gets injected here, hidden by default -->
-
-    <script type="module">
-      function loadReactApp() {
-        // Show the root div
-        document.getElementById('root').style.display = 'block';
-
-        // Dynamically load the React app by injecting the script tag
-        const script = document.createElement('script');
-        script.type = 'module';
-        script.src = '/src/main.tsx'; // This is the path to your React app's entry point
-        document.body.appendChild(script);
-      }
-    </script>
+    <div id="root"></div> <!-- React app gets injected here, hidden by default -->
+    <script type="module" src="/src/main.tsx"></script>
+   
   </body>
 </html>
