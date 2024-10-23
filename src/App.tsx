@@ -162,6 +162,7 @@ const App: React.FC = () => {
           <Route path="/aestheticshot" element={<AestheticShot />} />
           <Route path="/professionalshot" element={<ProfessionalShot/>} />
           <Route path="/passionshot" element={<PassionShot/>} />
+        
         </Routes>
       </div>
 
