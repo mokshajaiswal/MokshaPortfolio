@@ -12,3 +12,37 @@
     font-size: 1.2rem;
     color: #555;
   }
+
+
+    /* Container for the entire content */
+.image-details-container-p {
+
+  margin: 0px auto;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-family: 'Arial', sans-serif;
+  
+}
+
+/* Image section styling */
+.image-container-p {
+  width: 60%;
+ 
+ 
+}
+
+.p-image{
+  
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.main-image-p {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+
+}

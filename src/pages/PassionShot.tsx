@@ -7,7 +7,7 @@ import focalLengthIcon from '../assets/icons/focalLengthIcon.png';
 import apertureIcon from '../assets/icons/apertureIcon.png';
 import shutterSpeedIcon from '../assets/icons/shutterSpeedIcon.png';
 import isoIcon from '../assets/icons/isoIcon.png';
-import aestheticmain from '../assets/gallery/aestheticmain.png'
+import passionmain from '../assets/gallery/passionmain.png'
 import flower3 from '../assets/about/flower3.png'; 
 
 
@@ -22,12 +22,12 @@ const PassionShot: React.FC = () => {
       {/* Section heading on the left */}
       <div className="heading-a d-flex ">
         <img src={flower3} alt="flower" className="heading-icon-a" />
-        <h2 className="heading-text-a">A Bit About Myself</h2>
+        <h2 className="heading-text-a">The story behind the Passion shot</h2>
         <img src={flower3} alt="flower" className="heading-icon-a" />
       </div>
 
       {/* Headline on the right */}
-      <h1 className="headline-contact">Your Creative Guide to Functional and Aesthetic Digital Products</h1>
+      <h1 className="headline-contact"> Journalling, crocheting and more</h1>
     </div>
 
 
@@ -35,7 +35,7 @@ const PassionShot: React.FC = () => {
       {/* Image Section */}
       <div className="image-container">
         <img
-          src={aestheticmain} // Replace with the correct image URL
+          src={passionmain} // Replace with the correct image URL
           alt="Photography"
           className="main-image"
         />
@@ -48,31 +48,31 @@ const PassionShot: React.FC = () => {
           <div className="spec-item">
             <img src={cameraIcon} alt="Camera" className="spec-icon" />
             <p>Camera</p>
-            <p><b>1/125s</b></p>
+            <p><b>Motorola edge 40</b></p>
             
           </div>
           <div className="spec-item">
             <img src={focalLengthIcon} alt="Focal Length" className="spec-icon" />
             <p>Focal Length</p>
-            <p><b>1/125s</b></p>
+            <p><b>50mm</b></p>
             
           </div>
           <div className="spec-item">
             <img src={apertureIcon} alt="Aperture" className="spec-icon" />
             <p>Aperture</p>
-            <p><b>1/125s</b></p>
+            <p><b>f/5.6</b></p>
             
           </div>
           <div className="spec-item">
             <img src={shutterSpeedIcon} alt="Shutter Speed" className="spec-icon" />
             <p>Shutter Speed</p>
-            <p><b>1/125s</b></p>
+            <p><b>1/250s</b></p>
             
           </div>
           <div className="spec-item">
             <img src={isoIcon} alt="ISO" className="spec-icon" />
             <p>ISO</p>
-            <p><b>ISO 200</b></p>
+            <p><b>200</b></p>
             
           </div>
           
@@ -102,16 +102,16 @@ const PassionShot: React.FC = () => {
       <div className="description-section">
         <h2>What the Picture Depicts</h2>
         <p>
-        This photo represents a quiet and personal moment of creativity, where I am fully immersed in something I love. On a sunny day, I spread out a soft white blanket in the grass, surrounded by fallen leaves and a few personal items that reflect my hobbies and passions.
+        This photo represents a quiet and personal moment of creativity, where I am fully immersed in something I love and am passionate about. On a sunny day, I spread out a soft white blanket on the grass, surrounded by fallen leaves and a few personal items that reflect my hobbies and passions: journaling, crocheting, and using my Polaroid to capture special moments.
         </p>
         <p>
-        I lay comfortably, writing in my journal, letting my thoughts flow freely. The gentle sunlight highlights the pages, inviting me to pause and reflect. Around me, I’ve placed some colorful knitted pieces, a few snacks, and a Polaroid camera—objects that bring me joy and inspire creativity.
+        Crocheting is my passion. I love making clothes, plushies, scarves, bags, and more for myself and my loved ones. It brings me so much joy. Doing something I love outdoors under a beautiful sky always brightens my mood. I have been journaling for the past three years, where I like to write down everything that's going on inside my head.
+        </p>
+        <p>
+        This picture shows me lying comfortably, writing in my journal, letting my thoughts flow freely. The gentle sunlight highlights the pages, inviting me to pause and reflect. Around me are some colorful crocheted pieces, a few snacks, and my Polaroid camera—objects that bring me joy and spark my creativity.
         </p>
         <p>
         The peacefulness of this moment is what I wanted to capture. The fallen leaves scattered across the grass signal the change of seasons, a perfect time to slow down and enjoy the simple things. Writing, knitting, and taking photos are passions that help me connect with myself, allowing me to be present and mindful of the world around me.
-        </p>
-        <p>
-        In this image, I also wanted to show the beauty of combining relaxation with productivity. My back is turned to the camera, symbolizing that this moment is just for me—a time for reflection, creating, and enjoying the stillness of the day. The warm tones of the grass, the colorful yarn, and the soft texture of the blanket all add to the feeling of comfort and personal space.
         </p>
         <p>
         For me, this photo represents balance—finding time for the things I love in a peaceful setting. The scene invites you to pause and consider what brings you joy, encouraging a moment of self-care through simple, creative activities.
