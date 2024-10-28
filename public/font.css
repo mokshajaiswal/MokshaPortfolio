@@ -1,0 +1,48 @@
+@font-face {
+     font-family: 'Hellix';
+     src: url('/fonts/Hellix-Regular.woff2') format('woff2'),
+          url('/fonts/Hellix-Regular.woff') format('woff');
+     font-weight: 400;
+     font-style: normal;
+   }
+   
+   @font-face {
+     font-family: 'Hellix';
+     src: url('/fonts/Hellix-RegularItalic.woff2') format('woff2'),
+          url('/fonts/Hellix-RegularItalic.woff') format('woff');
+     font-weight: 400;
+     font-style: italic;
+   }
+   
+   @font-face {
+     font-family: 'Hellix';
+     src: url('/fonts/Hellix-Thin.woff2') format('woff2'),
+          url('/fonts/Hellix-Thin.woff') format('woff');
+     font-weight: 300;
+     font-style: normal;
+   }
+   
+   @font-face {
+     font-family: 'Hellix';
+     src: url('/fonts/Hellix-SemiBold.woff2') format('woff2'),
+          url('/fonts/Hellix-SemiBold.woff') format('woff');
+     font-weight: 500;
+     font-style: normal;
+   }
+   
+   @font-face {
+     font-family: 'Larken';
+     src: url('/fonts/Larken.woff2') format('woff2'),
+          url('/fonts/Larken.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+   }
+   
+   @font-face {
+     font-family: 'Larken';
+     src: url('/fonts/Larken_Semibold.woff2') format('woff2'),
+          url('/fonts/Larken_Semibold.woff') format('woff');
+     font-weight: 500;
+     font-style: normal;
+   }
+   

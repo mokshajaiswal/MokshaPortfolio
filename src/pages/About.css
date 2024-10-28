@@ -1,3 +1,5 @@
+/* src/pages/About.css */
+
 /* Container */
 .about-container {
   max-width: 1200px;
@@ -41,11 +43,13 @@
   margin: 0 10px;
 }
 
+
 .heading-text {
   font-size: 24px;
   font-weight: bold;
   color: #EB7196; /* Pink color for heading text */
 }
+
 
 /* Headline section (on the right) */
 .headline-about {
@@ -77,7 +81,6 @@
 .profile-image {
   width: 700px;
   height: auto;
-
   margin-bottom: 50px;
 }
 

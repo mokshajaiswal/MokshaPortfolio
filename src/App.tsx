@@ -15,6 +15,9 @@ import ProfessionalShot from './pages/ProfessionalShot';
 import PassionShot from './pages/PassionShot';
 import NotFound from './pages/NotFound';
 
+
+
+
 const App: React.FC = () => {
   
   const homeRef = useRef<HTMLDivElement>(null); // Ref for the Home page
