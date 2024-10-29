@@ -1,6 +1,12 @@
 /* src/pages/Home.css */
 
 /* Main container for the home page content */
+@font-face {
+  font-family: 'Helll';
+  src: url('../assets/Fonts/Helix/Hellix-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
 
 .home-main-container {
   width: 100vw;
@@ -31,7 +37,7 @@
 }
 
 .intro {
-  font-family: 'Hellix';
+  font-family: 'Arial';
   font-style: italic;
   font-size: 1.25rem;
   color: #e94e77;
@@ -54,7 +60,7 @@
   color: #666;
   max-width: 800px;
   font-weight: regular;
-  font-family: 'Hellix';
+  font-family: 'Arial';
   margin: 0 auto;
 }
 
@@ -134,7 +140,7 @@
 }
 
 .projects-heading {
-  font-family: 'Hellix';
+  font-family: 'Arial';
   display: flex;
   font-size: 1.6rem;
   margin:auto;
@@ -223,7 +229,7 @@
 
 /* Header Styles */
 .gallery-header {
-  font-family: 'Hellix';
+  font-family: 'Helll';
   display: flex;
   font-size: 1.6rem;
   margin:auto;
@@ -244,7 +250,7 @@
   font-size: 2.2rem;
   color: black;
   align-items: center;
-  font-family: 'larken';
+  font-family: 'Roboto';
   max-width: 600px;
   margin: auto;
 
@@ -296,7 +302,7 @@
   color: #000000;
   font-size: 1.2rem;
   font-weight: 500;
-  font-family: 'Larken';
+  font-family: 'Roboto';
   text-align: center;
   width: 40%;
 
@@ -443,7 +449,7 @@ img {
 .box-caption {
   font-size: 1.2rem;
   font-weight: 500;
-  font-family: 'Larken';
+  font-family: 'Roboto';
   color: black;
   width: 60%;
   margin: auto;
@@ -460,7 +466,7 @@ img {
   line-height: 1.5rem;
   font-size: 1.2rem;
   font-weight: 500;
-  font-family: 'Larken';
+  font-family: 'Roboto';
   color: black;
 }
 

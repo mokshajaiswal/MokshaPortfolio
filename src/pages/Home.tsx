@@ -51,7 +51,7 @@ const Home: React.FC = () => {
       <h1 className="headline">
       Crafting functional and visually pleasing digital products for mobile and web
       </h1>
-      <p className="subtext" style={{ fontFamily: 'Hellix' }}>
+      <p className="subtext" style={{ fontFamily: 'Helll' }}>
       I help teams and companies build their product from scratch. I’ve honed my skills in delivering exceptional digital experiences over the past 4 years.
       </p>
 
