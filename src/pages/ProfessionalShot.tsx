@@ -28,7 +28,7 @@ const PassionShot: React.FC = () => {
       </div>
 
       {/* Headline on the right */}
-      <h1 className="headline-contact"> Poised Pose</h1>
+      <h1 className="headline-contact"  style={{fontFamily: 'Larkb'}}> Poised Pose</h1>
     </div>
 
 
@@ -80,7 +80,7 @@ const PassionShot: React.FC = () => {
           </div>
           
         </div>
-        <ul style={{fontFamily: 'Hellix'}}>
+        <ul style={{fontFamily: 'Hellr'}}>
           <li>This picture is clicked with I phone 13 back camera.</li>
           <li>To avoid any distortion of the face I used the back camera. Placed it on the tripod in my room. </li>
           <li>I kept considerable distance from the tripod to my position and zoomed to get the perfect shot of my face.

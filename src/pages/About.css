@@ -6,7 +6,7 @@
   margin: 0 auto;
   padding: 40px;
   padding-top: 170px; /* Add spacing from the top */
-  font-family: 'Helix', sans-serif;
+  font-family: 'Larkb';
   color: #333;
   display: flex;
   flex-direction: column;
@@ -32,7 +32,7 @@
 .heading {
   padding-top: 10px;
   gap:0;
-  font-family: 'Hellix';
+  font-family: 'Hellsb';
   font-weight: 300;
   display: flex;
   align-items: flex-start;
@@ -95,7 +95,7 @@
   line-height: 1.6;
   margin-bottom: 20px;
   color: #555;
-  font-family: 'hellix';
+  font-family: 'hellr';
   text-align: center;
 }
 

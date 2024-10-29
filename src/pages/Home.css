@@ -2,11 +2,42 @@
 
 /* Main container for the home page content */
 @font-face {
-  font-family: 'Helll';
+  font-family: 'Hellr';
   src: url('../assets/Fonts/Helix/Hellix-Regular.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
 }
+
+@font-face {
+  font-family: 'Hellri';
+  src: url('../assets/Fonts/Helix/Hellix-RegularItalic.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Hellsb';
+  src: url('../assets/Fonts/Helix/Hellix-SemiBold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Hellm';
+  src: url('../assets/Fonts/Helix/Hellix-Medium.woff2') format('woff2');
+}
+
+
+@font-face {
+  font-family: 'Larkr';
+  src: url('../assets/Fonts/Larken/fonnts.com-Larken_Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Larkb';
+  src: url('../assets/Fonts/Larken/fonnts.com-Larken_Bold.otf') format('opentype');
+
+}
+@font-face {
+  font-family: 'Larkm';
+  src: url('../assets/Fonts/Larken/fonnts.com-Larken_Medium.otf') format('opentype');
+
+}
+
 
 .home-main-container {
   width: 100vw;
@@ -37,8 +68,7 @@
 }
 
 .intro {
-  font-family: 'Arial';
-  font-style: italic;
+  font-family: 'Hellri';
   font-size: 1.25rem;
   color: #e94e77;
 }
@@ -47,7 +77,7 @@
   margin: auto;
   margin-top: -7px;
   font-size: 3rem;
-  font-weight: bold;
+ 
   color: black;
   width: 80%;
   margin-bottom: 8px;
@@ -59,8 +89,8 @@
   font-size: 1.25rem;
   color: #666;
   max-width: 800px;
-  font-weight: regular;
-  font-family: 'Arial';
+
+  font-family: 'Hellr';
   margin: 0 auto;
 }
 
@@ -140,13 +170,13 @@
 }
 
 .projects-heading {
-  font-family: 'Arial';
+  font-family: 'Hellsb';
   display: flex;
   font-size: 1.6rem;
   margin:auto;
   align-items: center;
   justify-content: center;
-  color: #ffffff;
+  color: #FFE6EE;
   gap: 10px;
   margin: 30px auto 12px auto;
 }
@@ -155,7 +185,7 @@
 .projects-title {
   font-size: 2.2rem;
   color: white;
-  font-family: 'Larken';
+  font-family: 'Larkb';
   max-width: 600px;
   margin: auto;
   margin-bottom: 60px;
@@ -189,6 +219,7 @@
   border-color: #FFE6EE;
   border-width: 0.2rem;
   border-style: solid;
+  line-height: 0rem;
 }
 
 .project-image {
@@ -229,7 +260,7 @@
 
 /* Header Styles */
 .gallery-header {
-  font-family: 'Helll';
+  font-family: 'Hellsb';
   display: flex;
   font-size: 1.6rem;
   margin:auto;
@@ -250,7 +281,7 @@
   font-size: 2.2rem;
   color: black;
   align-items: center;
-  font-family: 'Roboto';
+  font-family: 'Larkb';
   max-width: 600px;
   margin: auto;
 
@@ -301,8 +332,8 @@
   font-size: 1.5rem;
   color: #000000;
   font-size: 1.2rem;
-  font-weight: 500;
-  font-family: 'Roboto';
+
+  font-family: 'Larkm';
   text-align: center;
   width: 40%;
 
@@ -448,8 +479,8 @@ img {
 /* Caption text below each image */
 .box-caption {
   font-size: 1.2rem;
-  font-weight: 500;
-  font-family: 'Roboto';
+
+  font-family: 'Larkm';
   color: black;
   width: 60%;
   margin: auto;
@@ -465,8 +496,7 @@ img {
   margin-bottom: -0.1rem;
   line-height: 1.5rem;
   font-size: 1.2rem;
-  font-weight: 500;
-  font-family: 'Roboto';
+  font-family: 'Larkm';
   color: black;
 }
 

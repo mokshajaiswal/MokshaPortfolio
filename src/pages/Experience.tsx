@@ -52,8 +52,8 @@ const Experience: React.FC = () => {
           <div className='row3'>
           <div className="experience-container">
                   <div className="experience-title">
-                    <span className="company-name">IG</span>
-                    <span className="role">Product Designer</span>
+                    <span className="company-name" style={{ fontFamily: 'Hellsb' }}>IG</span>
+                    <span className="role" style={{ fontFamily: 'Hellm' }}>Product Designer</span>
                   </div>
                   <ul className="experience-details">
                     <li>
@@ -86,8 +86,8 @@ const Experience: React.FC = () => {
                     <div className='row3'>
                     <div className="experience-container">
                             <div className="experience-title">
-                              <span className="company-name">Zeta</span>
-                              <span className="role">UX Designer</span>
+                              <span className="company-name" style={{ fontFamily: 'Hellsb' }}>Zeta</span>
+                              <span className="role"  style={{ fontFamily: 'Hellm' }}>UX Designer</span>
                             </div>
                             <ul className="experience-details">
                               <li>
@@ -124,8 +124,8 @@ const Experience: React.FC = () => {
                     <div className='row3'>
                     <div className="experience-container">
                             <div className="experience-title">
-                              <span className="company-name">Metafic</span>
-                              <span className="role">UX/UI Designer</span>
+                              <span className="company-name" style={{ fontFamily: 'Hellsb' }}>Metafic</span>
+                              <span className="role"  style={{ fontFamily: 'Hellm' }}>UX/UI Designer</span>
                             </div>
                             <ul className="experience-details">
                               <li>
@@ -167,8 +167,8 @@ const Experience: React.FC = () => {
                     <div className='row3'>
                     <div className="experience-container">
                             <div className="experience-title">
-                              <span className="company-name">Lollypop Design Studio</span>
-                              <span className="role">UI/UX Designer Intern</span>
+                              <span className="company-name" style={{ fontFamily: 'Hellsb' }}>Lollypop Design Studio</span>
+                              <span className="role"  style={{ fontFamily: 'Hellm' }}>UI/UX Designer Intern</span>
                             </div>
                             <ul className="experience-details">
                               <li>
@@ -201,8 +201,8 @@ const Experience: React.FC = () => {
                     <div className='row3'>
                     <div className="experience-container">
                             <div className="experience-title">
-                              <span className="company-name">Verzeo</span>
-                              <span className="role">UI/UX Designer Intern</span>
+                              <span className="company-name" style={{ fontFamily: 'Hellsb' }}>Verzeo</span>
+                              <span className="role"  style={{ fontFamily: 'Hellm' }}>UI/UX Designer Intern</span>
                             </div>
                             <ul className="experience-details">
                               <li>
@@ -240,8 +240,8 @@ const Experience: React.FC = () => {
                     <div className='row3'>
                     <div className="experience-container">
                             <div className="experience-title">
-                              <span className="company-name">Apna MD</span>
-                              <span className="role">Freelance UI/UX Designer</span>
+                              <span className="company-name" style={{ fontFamily: 'Hellsb' }}>Apna MD</span>
+                              <span className="role"  style={{ fontFamily: 'Hellm' }}>Freelance UI/UX Designer</span>
                             </div>
                             <ul className="experience-details">
                               <li>

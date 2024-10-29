@@ -22,12 +22,12 @@ const PassionShot: React.FC = () => {
       {/* Section heading on the left */}
       <div className="heading-a d-flex ">
         <img src={flower3} alt="flower" className="heading-icon-a" />
-        <h2 className="heading-text-a">The story behind the Passion shot</h2>
+        <h2 className="heading-text-a" style={{fontFamily : 'Hellsb'}}>The story behind the Passion shot</h2>
         <img src={flower3} alt="flower" className="heading-icon-a" />
       </div>
 
       {/* Headline on the right */}
-      <h1 className="headline-contact"> Journalling, crocheting and more</h1>
+      <h1 className="headline-contact" > Journalling, crocheting and more</h1>
     </div>
 
 
@@ -42,13 +42,13 @@ const PassionShot: React.FC = () => {
       </div>
 
       {/* Technical Specifications */}
-      <div className="technical-specifications">
+      <div className="technical-specifications" style={{fontFamily : 'Larkb'}}>
         <h2>Technical Specifications</h2>
         <div className="specifications-grid">
           <div className="spec-item">
             <img src={cameraIcon} alt="Camera" className="spec-icon" />
             <p>Camera</p>
-            <p><b>Motorola edge 40</b></p>
+            <p><b>Motorola Edge 40</b></p>
             
           </div>
           <div className="spec-item">
@@ -77,7 +77,7 @@ const PassionShot: React.FC = () => {
           </div>
           
         </div>
-        <ul style={{fontFamily: 'Hellix'}}>
+        <ul style={{fontFamily: 'Hellr'}}>
           <li>This picture was taken with an Android phone.</li>
           <li>I wanted to capture a relaxed, cozy moment, so I chose a balanced focal length. This helped me include the entire scene—myself, the surroundings, and the small details that reflect my passion for writing and creativity. The composition is wide enough to show the peaceful setting while keeping the focus on the central moment.</li>
           <li>For the aperture, I kept it moderate to let in just enough natural light to create soft, warm tones.</li>
@@ -87,7 +87,7 @@ const PassionShot: React.FC = () => {
       </div>
 
       {/* Editing Specifications */}
-      <div className="editing-specifications">
+      <div className="editing-specifications" style={{fontFamily : 'Larkb'}}>
         <h2>Editing Specifications</h2>
         <ul>
           <li>Increased vibrance to enhance the colors of the green grass and colorful knitwear without oversaturating the natural tones.</li>
@@ -99,7 +99,7 @@ const PassionShot: React.FC = () => {
       </div>
 
       {/* Description */}
-      <div className="description-section">
+      <div className="description-section" style={{fontFamily : 'Larkb'}}>
         <h2>What the Picture Depicts</h2>
         <p>
         This photo represents a quiet and personal moment of creativity, where I am fully immersed in something I love and am passionate about. On a sunny day, I spread out a soft white blanket on the grass, surrounded by fallen leaves and a few personal items that reflect my hobbies and passions: journaling, crocheting, and using my Polaroid to capture special moments.

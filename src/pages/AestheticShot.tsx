@@ -28,7 +28,7 @@ const AestheticShot: React.FC = () => {
       </div>
 
       {/* Headline on the right */}
-      <h1 className="headline-aesthetic">Embracing Nature near Riverside</h1>
+      <h1 className="headline-aesthetic" style={{fontFamily: 'Larkb'}}>Embracing Nature near Riverside</h1>
     </div>
     <div className="image-details-container">
       {/* Image Section */}
@@ -76,7 +76,7 @@ const AestheticShot: React.FC = () => {
           </div>
           
         </div>
-        <ul style={{fontFamily: 'Hellix'}}>
+        <ul style={{fontFamily: 'Hellr'}}>
           <li>This picture was clicked with an android phone. </li>
           <li>I wanted to click a soft dreamy look for this picture and thats why decided to click picture with a longer focal length. As this focal length allows me to capture the scene in entirety which includes with the person and the surrounding creating the balanced composition.</li>
           <li>For aperture I wanted more light into the camera, as there was less light in the environment. </li>

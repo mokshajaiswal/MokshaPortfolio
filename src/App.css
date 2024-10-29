@@ -1,7 +1,9 @@
 /* src/App.css */
 
+
+
 body {
-  font-family: 'Hellix', Arial, sans-serif; /* Use Helix for the body text */
+  font-family: 'Hellr', Arial, sans-serif; /* Use Helix for the body text */
 }
 
 h1, .headline {
@@ -10,7 +12,7 @@ h1, .headline {
 
 /* Remove default margins and paddings */
 html, body, #root {
-  font-family: 'Hellix';
+  font-family: 'Hellr';
   background-color: #f3f1ed;
   margin: 0 auto;
   padding: 0;
@@ -61,7 +63,7 @@ html, body, #root {
 
 /* Individual nav-link styles */
 .nav-link {
-  font-family: 'Hellix', Arial, sans-serif; /* Use Helix for nav items */
+  font-family: 'Hellr'; /* Use Helix for nav items */
   color: #000;
   justify-content: center;
   align-items: center;
@@ -156,8 +158,8 @@ html, body, #root {
 }
 
 .footer p {
-  font-family: 'hellix';
-  font-style: italic;
+  font-family: 'hellri';
+
 
   margin: 0;
   color: #fff0f0;

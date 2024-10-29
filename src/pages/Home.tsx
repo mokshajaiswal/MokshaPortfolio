@@ -48,10 +48,10 @@ const Home: React.FC = () => {
       <p className="intro">
       <span role="img" aria-label="wave">👋</span> I'm Moksha Jaiswal, your go-to Product Designer
       </p>
-      <h1 className="headline">
+      <h1 className="headline" style={{ fontFamily: 'Larkb' }}>
       Crafting functional and visually pleasing digital products for mobile and web
       </h1>
-      <p className="subtext" style={{ fontFamily: 'Helll' }}>
+      <p className="subtext" style={{ fontFamily: 'Hellr' }}>
       I help teams and companies build their product from scratch. I’ve honed my skills in delivering exceptional digital experiences over the past 4 years.
       </p>
 
@@ -117,7 +117,7 @@ const Home: React.FC = () => {
           style={{ textDecoration: 'none' }} // Optional: Remove underline
         >
           <img src={project3} alt="Design Principles" className="project-image" />
-          <p className="project-name">Design Qualities in Everyday Things</p>
+          <p className="project-name" style={{ fontFamily: 'Hellm' }}>Design Qualities in Everyday Things</p>
         </a>
 
         {/* Second Project Card with hyperlink */}
@@ -129,16 +129,16 @@ const Home: React.FC = () => {
           style={{ textDecoration: 'none' }} // Optional: Remove underline
         >
           <img src={project2} alt="Quantitative Research" className="project-image" />
-          <p className="project-name">Semi Structured Interview Research</p>
+          <p className="project-name" style={{ fontFamily: 'Hellm' }}>Semi Structured Interview Research</p>
         </a>
 
         <div className="project-card">
           <img src={project1} alt="Project Name 3" className="project-image" />
-          <p className="project-name">Coming Soon</p>
+          <p className="project-name"style={{ fontFamily: 'Hellm' }} >Coming Soon</p>
         </div>
         <div className="project-card">
           <img src={project1} alt="Project Name 4" className="project-image" />
-          <p className="project-name">Coming Soon</p>
+          <p className="project-name" style={{ fontFamily: 'Hellm' }}>Coming Soon</p>
         </div>
       </div>
     </div>
