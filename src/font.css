@@ -33,16 +33,16 @@
 
   @font-face {
     font-family: 'Larken';
-    src: url('./assets/Fonts/Larken/Larken.woff2') format('woff2'),
-         url('./assets/Fonts/Larken/Larken.woff') format('woff');
+    src: url('./assets/Fonts/Larken/fonnts.com-Larken_Regular.otf') format('opentype');
+        
     font-weight: normal;
     font-style: normal;
   }
 
   @font-face {
     font-family: 'Larken';
-    src: url('./assets/Fonts/Larken/Larken_Semibold.woff2') format('woff2'),
-         url('./assets/Fonts/Larken/Larken_Semibold.woff') format('woff');
+    src: url('./assets/Fonts/Larken/fonnts.com-Larken_Bold.otf') format('opentype');
+         
     font-weight: 500;
-    font-style: normal;
+    font-style: normal; 
   }
