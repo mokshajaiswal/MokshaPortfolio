@@ -1,16 +1,16 @@
 // src/pages/Home.tsx
 import React, { useRef } from 'react';
 import './Home.css';
-import dribbbleIcon from '../assets/icons/dribbble.png';
-import instagramIcon from '../assets/icons/instagram.png';
-import linkedinIcon from '../assets/icons/linkedin.png';
+import dribbbleIcon from '../assets/Icons/dribbble.png';
+import instagramIcon from '../assets/Icons/instagram.png';
+import linkedinIcon from '../assets/Icons/linkedin.png';
 import verzeoCompany from '../assets/company/verzeo.png';
 import lollypopCompany from '../assets/company/lollypop.png';
 import alkyeCompany from '../assets/company/alkye.png';
 import metaficCompany from '../assets/company/metafic.png';
 import zetaCompany from '../assets/company/zeta.png';
 import igCompany from '../assets/company/ig.png';
-import flower from '../assets/icons/flower.png';
+import flower from '../assets/Icons/flower.png';
 import project1 from '../assets/project/p1image.png';
 import project2 from '../assets/project/p2image.png';
 import project3 from '../assets/project/p3image.png';

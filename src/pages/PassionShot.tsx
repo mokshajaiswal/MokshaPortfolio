@@ -2,11 +2,11 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './PassionShot.css'; // Create a CSS file for styling
-import cameraIcon from '../assets/icons/cameraIcon.png';
-import focalLengthIcon from '../assets/icons/focalLengthIcon.png';
-import apertureIcon from '../assets/icons/apertureIcon.png';
-import shutterSpeedIcon from '../assets/icons/shutterSpeedIcon.png';
-import isoIcon from '../assets/icons/isoIcon.png';
+import cameraIcon from '../assets/Icons/cameraIcon.png';
+import focalLengthIcon from '../assets/Icons/focalLengthIcon.png';
+import apertureIcon from '../assets/Icons/apertureIcon.png';
+import shutterSpeedIcon from '../assets/Icons/shutterSpeedIcon.png';
+import isoIcon from '../assets/Icons/isoIcon.png';
 import passionmain from '../assets/gallery/passionmain.png'
 import flower3 from '../assets/about/flower3.png'; 
 

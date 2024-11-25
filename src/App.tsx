@@ -5,10 +5,10 @@ import About from './pages/About';
 import Experience from './pages/Experience';
 import Project from './pages/Project';
 import Contact from './pages/Contact';
-import profileIcon from './assets/icons/profile.png';
+import profileIcon from './assets/Icons/profile.png';
 import home from './assets/icons/home.png';
-import homeoutline from './assets/icons/homeoutline.png';
-import flower from './assets/icons/flower.png';
+import homeoutline from './assets/Icons/homeoutline.png';
+import flower from './assets/Icons/flower.png';
 import './App.css'; // Custom CSS
 import AestheticShot from './pages/AestheticShot';
 import ProfessionalShot from './pages/ProfessionalShot';
