@@ -41,9 +41,10 @@
 }
 
 .heading-text-a {
-  font-size: 24px;
-  font-weight: bold;
-  color: #EB7196; /* Pink color for heading text */
+  
+    font-family: 'Hellri';
+    font-size: 1.25rem;
+    color: #e94e77;
   text-align: center;
   justify-content: center;
 }

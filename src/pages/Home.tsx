@@ -165,14 +165,19 @@ const Home: React.FC = () => {
         {/* Left-side large box */}
         <div className="col-lg-6 mb-4">
           <div className="large-box">
+          <NavLink to="/video" style={{ textDecoration: 'none', color: 'inherit'}}> 
           <img src={videop}  className="videothumbnail"/>
           <div className="stickers" style={{top: '6%', right: '6%'}}><img src={star2} className="star2"/></div>
           <div className="stickers" style={{top: '-6%', left: '-8%'}}><img src={pin} className="pin"/></div>
           <div className="stickers" style={{top: '71%', right: '10%'}}><img src={plant} className="plant"/></div>
           <div className="stickers" style={{top: '76%', left: '10%'}}><img src={bush} className="bush"/></div>
-            <p className="placeholder-text">Process of Professional Videography</p>
+            <p className="placeholder-text">Blog On the VideoProduction of the Ad “From Struggle to Swift” </p>
+            </NavLink> 
           </div>
+          
         </div>
+        
+        
 
         {/* Right-side smaller boxes */}
         <div className="col-lg-6">

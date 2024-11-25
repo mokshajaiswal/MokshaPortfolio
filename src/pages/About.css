@@ -55,6 +55,7 @@
 .headline-about {
   font-size: 32px;
   font-weight: bold;
+  font-family: 'Larkb';
   color: #333;
   margin: 0;
   max-width: 42%; /* Limit width of the headline for better alignment */

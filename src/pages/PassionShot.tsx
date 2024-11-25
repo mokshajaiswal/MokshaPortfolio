@@ -22,7 +22,7 @@ const PassionShot: React.FC = () => {
       {/* Section heading on the left */}
       <div className="heading-a d-flex ">
         <img src={flower3} alt="flower" className="heading-icon-a" />
-        <h2 className="heading-text-a" style={{fontFamily : 'Hellsb'}}>The story behind the Passion shot</h2>
+        <h2 className="heading-text-a" style={{fontFamily : 'Hellri'}}>The story behind the Passion shot</h2>
         <img src={flower3} alt="flower" className="heading-icon-a" />
       </div>
 

@@ -13,7 +13,11 @@ import './App.css'; // Custom CSS
 import AestheticShot from './pages/AestheticShot';
 import ProfessionalShot from './pages/ProfessionalShot';
 import PassionShot from './pages/PassionShot';
+import Video from './pages/Video';
+
+
 import NotFound from './pages/NotFound';
+
 
 
 
@@ -143,7 +147,7 @@ const App: React.FC = () => {
               </li>
               <li className="nav-item">
   <button
-    className={`btn nav-link ${location.pathname === '/aestheticshot' || location.pathname === '/ProfessionalShot' || location.pathname === '/PassionShot' ? 'active' : ''}`}
+    className={`btn nav-link ${location.pathname === '/aestheticshot' || location.pathname === '/ProfessionalShot' || location.pathname === '/Video'|| location.pathname === '/PassionShot' ? 'active' : ''}`}
     onClick={handleGalleryClick}
     style={{ cursor: 'pointer', color: 'black' }}
   >
@@ -173,6 +177,9 @@ const App: React.FC = () => {
           <Route path="/aestheticshot" element={<AestheticShot />} />
           <Route path="/professionalshot" element={<ProfessionalShot/>} />
           <Route path="/passionshot" element={<PassionShot/>} />
+          
+          <Route path="/video" element={<Video/>} />
+          
         	
 	  {/* Catch-all route to handle unknown routes */}
           <Route path="*" element={<NotFound />} />
