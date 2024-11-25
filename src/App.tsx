@@ -6,7 +6,7 @@ import Experience from './pages/Experience';
 import Project from './pages/Project';
 import Contact from './pages/Contact';
 import profileIcon from './assets/Icons/profile.png';
-import home from './assets/icons/home.png';
+import home from './assets/Icons/home.png';
 import homeoutline from './assets/Icons/homeoutline.png';
 import flower from './assets/Icons/flower.png';
 import './App.css'; // Custom CSS
