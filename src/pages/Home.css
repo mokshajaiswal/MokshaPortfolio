@@ -112,7 +112,6 @@
 }
 
 .company-logos {
-
   margin-top: 60px; /* Space above the logos section */
   display: flex;
   justify-content: center; /* Center logos */
@@ -196,10 +195,27 @@
 }
 
 .projects-container {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
   display: flex;
   justify-content: center;
   flex-wrap: wrap; /* Ensures cards wrap on smaller screens */
   padding-bottom: 100px;
+}
+
+.project-card:hover {
+  transform: scale(1.05); /* Slightly scale up the card */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+}
+
+/* Optional: Add hover effect for the project name text */
+.project-card:hover .project-name {
+  color: #000000; /* Change text color on hover */
+}
+
+/* Add smooth background color change */
+.project-card:hover {
+  background-color: #f9f9f9; /* Change the background color on hover */
 }
 
 .projects-card-container{
@@ -220,6 +236,8 @@
   border-width: 0.2rem;
   border-style: solid;
   line-height: 0rem;
+  transition: transform 0.6s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  
 }
 
 .project-image {
@@ -298,7 +316,13 @@
   border-radius: 50px;
   align-items: center;
   justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 
+}
+
+.large-box:hover {
+  transform: scale(1.02); /* Slight zoom effect */
+  box-shadow: 0 4px 10px rgba(187, 108, 248, 0.2); /* Add shadow on hover */
 }
 
 .pin {
@@ -307,12 +331,32 @@
   transform: rotate(20deg);
 }
 
+/* Keyframes for pin bounce */
+@keyframes pinBounce {
+  0% {
+    transform: translateY(0); /* Start at original position */
+  }
+  50% {
+    transform: translateY(-5px); /* Move slightly up */
+  }
+  100% {
+    transform: translateY(0); /* Return to original position */
+  }
+}
+
+/* Apply the animation to the pin */
+.pin {
+  animation: pinBounce 1.5s ease-in-out infinite; /* Adjust timing for speed */
+}
+
 .star2 {
   object-fit: contain;
   width: 6%;
 
   transform: rotate(20deg);
 }
+
+
 
 
 .plant {
@@ -370,6 +414,25 @@
   
 }
 
+/* Subtle movement animation for the arrow */
+@keyframes subtleMovement {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(8px); /* Move right */
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Apply the animation to the arrow */
+.arrow {
+  animation: subtleMovement 2s ease-in-out infinite; /* Adjust timing for speed */
+}
+
+
 
 
 .small-box1 {
@@ -384,7 +447,13 @@
   border-style: solid;
   border-width: 0.4rem;
   gap: 20px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
     
+}
+
+.small-box1:hover {
+  transform: scale(1.02); /* Slight zoom effect */
+  box-shadow: 0 4px 10px rgba(241, 121, 78, 0.2); /* Add shadow on hover */
 }
 
 
@@ -403,7 +472,13 @@
   border-color: #fff0b8;
   border-style: solid;
   border-width: 0.4rem;
+  transition: transform 0.3s ease, opacity 0.3s ease;
   
+}
+
+.small-box2:hover {
+  transform: scale(1.02); /* Slight zoom effect */
+  box-shadow: 0 4px 10px rgba(241, 233, 78, 0.2); /* Add shadow on hover */
 }
 
 .stickers {
@@ -422,11 +497,53 @@
   transform: rotate(20deg);
 }
 
+
+/* Keyframes for simple moving animation */
+@keyframes starMove {
+  0% {
+    transform: translateX(0); /* Start position */
+  }
+  50% {
+    transform: translateX(-5px); /* Move 10px to the right */
+  }
+  100% {
+    transform: translateX(0); /* Return to the start position */
+  }
+}
+
+/* Apply animation to the star */
+.star {
+  animation: starMove 2s ease-in-out infinite; /* Smooth back-and-forth motion */
+}
+
+
+
 .rainbow {
   width: 67px; /* Adjust the size of the arrow as needed */
 
   height: auto;
 }
+
+/* Keyframes for rainbow animation */
+/* Keyframes for smooth rotation */
+@keyframes rainbowRotate {
+  0% {
+    transform: rotate(0deg); /* Start position */
+  }
+  50% {
+    transform: rotate(10deg); /* Slight tilt to the right */
+  }
+  100% {
+    transform: rotate(0deg); /* Return to the start position */
+  }
+}
+
+/* Apply animation to the rainbow */
+.rainbow {
+  animation: rainbowRotate 2s ease-in-out infinite; /* Smooth rotation */
+}
+
+
 
 
 /* Smaller boxes3 on the right */
@@ -446,7 +563,13 @@
   border-width: 0.4rem;
   padding-top: 0px;
   margin-bottom: 22px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 
+}
+
+.small-box3:hover {
+  transform: scale(1.02); /* Slight zoom effect */
+  box-shadow: 0 4px 10px rgba(170, 241, 78, 0.2); /* Add shadow on hover */
 }
 
 
@@ -456,6 +579,27 @@
   height: auto;
   transform: rotate(12deg);
 }
+
+/* Right-left animation for the work sticker */
+@keyframes rightLeftMovement {
+  0% {
+    transform: translateX(12); /* Start at original position */
+  }
+  50% {
+    transform: translateX(10px); /* Move 10px to the right */
+  }
+  100% {
+    transform: translateX(12); /* Return to original position */
+  }
+}
+
+/* Apply the animation to the work sticker */
+.work {
+  animation: rightLeftMovement 2s ease-in-out infinite; /* Adjust timing for speed */
+}
+
+
+
 
 .bg-orange {
   background-color: #f7b267;
@@ -511,6 +655,108 @@ img {
   max-height: 100%;
   margin: 8px 10px;
  
+}
+
+
+
+
+
+
+/* Keyframes for seamless scrolling */
+@keyframes scrollLogos {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Outer container to ensure scrolling view */
+.company-logos {
+  display: flex;
+  justify-content: flex-start; /* Align items to the start */
+  overflow: hidden; /* Hide overflow for smooth animation */
+  position: relative;
+  width: 100%;
+  margin-top: 60px;
+}
+
+/* Inner container for seamless scrolling */
+.company-logos-inner {
+  display: flex;
+  width: calc(200% + 100px); /* Double the container width */
+  animation: scrollLogos 20s linear infinite; /* Smooth infinite scroll */
+}
+
+/* Logo container: keeps logos aligned */
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 100px; /* Adjust gap between logos */
+}
+
+/* Individual logo styling */
+.company-logo {
+  max-width: 120px;
+  max-height: 60px;
+  object-fit: contain;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0.8;
+}
+
+.company-logo:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+
+
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+  75% {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.wave-emoji {
+  display: inline-block;
+  font-size: 1.7rem; /* Adjust size as needed */
+  transform-origin: 70% 70%; /* Adjust to get a realistic pivot point */
+  animation: wave 1.5s ease-in-out infinite;
+}
+
+
+
+
+
+.flower2-image {
+  animation: rotateFlower 5s linear infinite;
+  width: 30px; /* Set your desired width */
+  height: 30px; /* Set your desired height */
+  object-fit: contain; /* Ensures the image is not stretched */
+}
+
+@keyframes rotateFlower {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 

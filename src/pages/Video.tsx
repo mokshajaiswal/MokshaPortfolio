@@ -9,7 +9,8 @@ import video4 from '../assets/gallery/video4.png'; // Replace with the actual im
 import video5 from '../assets/gallery/video5.png'; // Replace with the actual image path
 import video6 from '../assets/gallery/video6.png'; // Replace with the actual image path
 import VideoProduction from '../assets/gallery/VideoProduction.mp4'; // Replace with the actual video path
-import play from '../assets/gallery/play.png'
+import play from '../assets/gallery/play.png';
+import InteractionWidget from '../components/InteractionWidget';
 
 
 
@@ -217,7 +218,7 @@ I am grateful to my team for their support and contributions. Their efforts in t
       </div>
 
 
-
+      <InteractionWidget pageId="passionShot" />
       
 
 

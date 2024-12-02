@@ -77,10 +77,16 @@ html, body, #root {
 
 /* Hover state for nav links */
 .nav-link:hover {
-  background-color: rgba(255, 255, 255, 0.244); /* Lighten background on hover */
+  background-color: rgba(255, 255, 255, 0.437); /* Lighten background on hover */
   border-radius: 15px;
-
 }
+
+/* Button style for the "Project" and "Gallery" sections */
+.navbar-nav .nav-item .btn.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.437); /* Same hover effect as for the links */
+  border-radius: 15px; /* Ensure same roundness on hover */
+}
+
 
 /* Active link style */
 .nav-link.active {
@@ -164,3 +170,92 @@ html, body, #root {
   margin: 0;
   color: #fff0f0;
 }
+
+
+/* Existing .butn styles */
+.butn {
+  padding: 10px 20px;
+  color: black;
+  text-decoration: none;
+  background-color: #f6aac1;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Add transform transition for smooth scale effect */
+}
+
+/* Hover state for the Contact button */
+.butn:hover {
+  background-color: #f298b6; /* Change to a slightly darker shade on hover */
+  transform: scale(1.05); /* Slightly increase size for a hover effect */
+}
+
+
+/* Initial state of the profile icon */
+.rounded-circle {
+  transition: transform 0.3s ease-in-out; /* Smooth transition for the rotation */
+}
+
+/* Hover effect to rotate the profile icon */
+.rounded-circle:hover {
+  transform: rotate(360deg); /* Rotate the icon 360 degrees */
+}
+
+
+
+
+.flower-image {
+  animation: rotateFlower 5s linear infinite;
+  width: 30px; /* Set your desired width */
+  height: 30px; /* Set your desired height */
+  object-fit: contain; /* Ensures the image is not stretched */
+}
+
+@keyframes rotateFlower {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+/* Navbar Toggler Styling */
+.navbar-toggler {
+  margin-right: auto; /* Push the toggler to the left */
+  background-color: #000;
+}
+
+
+.navbar-toggler-icon{
+color: #000;
+}
+
+/* Left-align navbar links when expanded */
+.navbar-collapse {
+  text-align: left;
+  
+}
+
+.navbar-nav {
+  gap: 10px; /* Adjust spacing between nav items */
+  text-align: left;
+  align-items: flex-start;
+}
+
+.navbar-nav .nav-link {
+  font-family: 'Hellr'; /* Consistent font */
+  padding: 8px 15px; /* Add padding for better touch targets */
+  text-align: left; /* Left-align text */
+}
+
+/* Remove profile icon on smaller screens */
+.navbar-brand.d-none.d-lg-block {
+  display: none; /* Hide on small screens */
+}
+
+/* Profile icon adjustment for larger screens */
+.navbar-brand.d-lg-block {
+  margin-left: 15px; /* Add margin to separate from toggler */
+}
+

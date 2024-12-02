@@ -14,7 +14,7 @@ import AestheticShot from './pages/AestheticShot';
 import ProfessionalShot from './pages/ProfessionalShot';
 import PassionShot from './pages/PassionShot';
 import Video from './pages/Video';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import NotFound from './pages/NotFound';
 
@@ -102,68 +102,91 @@ const App: React.FC = () => {
 
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-dark fixed-top" >
-        <div className="container d-flex justify-content-between align-items-center">
-          {/* Left-aligned profile icon */}
-          <NavLink className="navbar-brand" to="/">
-            <img src={profileIcon} alt="Profile" className="rounded-circle" width="50" />
+      <nav className="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div className="container d-flex justify-content-between align-items-center">
+    {/* Left-aligned profile icon */}
+    <NavLink className="navbar-brand" to="/">
+      <img src={profileIcon} alt="Profile" className="rounded-circle" width="50" />
+    </NavLink>
+
+    {/* Toggler button for small screens */}
+    <button
+      className="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span className="navbar-toggler-icon"></span>
+    </button>
+
+    {/* Center-aligned navbar links */}
+    <div className="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul className="navbar-nav" style={{ padding: '10px 20px' }}>
+        <li className="nav-item">
+          {/* Handle Home click */}
+          <NavLink
+            className={({ isActive }) =>
+              (isActive || location.pathname === '/home') ? 'nav-link active' : 'nav-link'
+            }
+            to="/"
+            style={{ cursor: 'pointer' }}
+          >
+            <button className="btn nav-link" onClick={handleHomeClick} style={{ cursor: 'pointer' }}>
+              {location.pathname === '/' || location.pathname === '/home' ? (
+                <img src={home} className="home-active" alt="Home" />
+              ) : (
+                <img src={homeoutline} className="home-inactive" alt="Home" />
+              )}
+            </button>
           </NavLink>
-
-          {/* Center-aligned navbar links */}
-          <div className="collapse navbar-collapse justify-content-center" id="navbarNav">
-            <ul className="navbar-nav" style={{ padding: '10px 20px' }}>
-              <li className="nav-item">
-                {/* Handle Home click */}
-                <NavLink
-                  className={({ isActive }) =>
-                    (isActive || location.pathname === '/home') ? 'nav-link active' : 'nav-link'
-                  }
-                  to="/"
-                  style={{ cursor: 'pointer' }}
-                >
-                  <button className="btn nav-link" onClick={handleHomeClick} style={{ cursor: 'pointer' }}>
-                  {location.pathname === '/' || location.pathname === '/home'? (
-                    <img src={home} className="home-active"  alt="Home" />
-                  ) : (
-                    <img src={homeoutline} className="home-inactive" alt="Home" />
-                  )}
-                </button>
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')} to="/about" style={{color: 'black'}}>
-                  About
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')} to="/experience" style={{color: 'black'}}>
-                  Experience
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <button className="btn nav-link" onClick={handleProjectClick} style={{ cursor: 'pointer' , color: 'black'}}>
-                  Project
-                </button>
-              </li>
-              <li className="nav-item">
-  <button
-    className={`btn nav-link ${location.pathname === '/aestheticshot' || location.pathname === '/ProfessionalShot' || location.pathname === '/Video'|| location.pathname === '/PassionShot' ? 'active' : ''}`}
-    onClick={handleGalleryClick}
-    style={{ cursor: 'pointer', color: 'black' }}
-  >
-    Gallery
-  </button>
-</li>
-
-            </ul>
-          </div>
-
-          {/* Right-side Contact button */}
-          <NavLink className="butn" to="/contact">
-            Contact
+        </li>
+        <li className="nav-item">
+          <NavLink className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')} to="/about" style={{ color: 'black' }}>
+            About
           </NavLink>
-        </div>
-      </nav>
+        </li>
+        <li className="nav-item">
+          <NavLink className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')} to="/experience" style={{ color: 'black' }}>
+            Experience
+          </NavLink>
+        </li>
+        <li className="nav-item">
+          <button
+            className={`btn nav-link ${location.pathname === '/project' ? 'active' : ''}`}
+            onClick={handleProjectClick}
+            style={{ cursor: 'pointer', color: 'black' }}
+          >
+            Project
+          </button>
+        </li>
+        <li className="nav-item">
+          <button
+            className={`btn nav-link ${
+              location.pathname === '/aestheticshot' ||
+              location.pathname === '/ProfessionalShot' ||
+              location.pathname === '/Video' ||
+              location.pathname === '/PassionShot'
+                ? 'active'
+                : ''
+            }`}
+            onClick={handleGalleryClick}
+            style={{ cursor: 'pointer', color: 'black' }}
+          >
+            Gallery
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    {/* Right-side Contact button */}
+    <NavLink className="butn" to="/contact">
+      Contact
+    </NavLink>
+  </div>
+</nav>
 
       {/* Main Content */}
       <div className="main-content" ref={homeRef}>

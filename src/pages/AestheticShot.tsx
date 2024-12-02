@@ -8,7 +8,8 @@ import focalLengthIcon from '../assets/Icons/focalLengthIcon.png';
 import apertureIcon from '../assets/Icons/apertureIcon.png';
 import shutterSpeedIcon from '../assets/Icons/shutterSpeedIcon.png';
 import isoIcon from '../assets/Icons/isoIcon.png';
-import aestheticmain from '../assets/gallery/aestheticmain.png'
+import aestheticmain from '../assets/gallery/aestheticmain.png';
+import InteractionWidget from '../components/InteractionWidget';
 
 
 
@@ -110,6 +111,9 @@ const AestheticShot: React.FC = () => {
         
       </div>
     </div>
+
+    <InteractionWidget pageId="passionShot" />
+    
     </div>
 
     

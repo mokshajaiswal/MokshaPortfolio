@@ -46,8 +46,8 @@ const Home: React.FC = () => {
     <div className="home-container d-flex flex-column justify-content-center align-items-center">
       <div className="home-content">
       <p className="intro">
-      <span role="img" aria-label="wave">👋</span> I'm Moksha Jaiswal, your go-to Product Designer
-      </p>
+  <span role="img" aria-label="wave" className="wave-emoji">👋</span> I'm Moksha Jaiswal, your go-to Product Designer
+</p>
       <h1 className="headline" style={{ fontFamily: 'Larkb' }}>
       Crafting functional and visually pleasing digital products for mobile and web
       </h1>
@@ -69,27 +69,51 @@ const Home: React.FC = () => {
       </a>
     </div>
 
-    {/* Company logos section */}
-      <div className="company-logos">
-      <div className="logo-container">
+    <div className="company-logos">
+  <div className="company-logos-inner">
+    {/* Original set of logos */}
+    <div className="logo-container">
       <img src={verzeoCompany} alt="Verzeo" className="company-logo" />
-      </div>
-      <div className="logo-container">
+    </div>
+    <div className="logo-container">
       <img src={lollypopCompany} alt="Lollypop" className="company-logo" />
-      </div>
-      <div className="logo-container">
+    </div>
+    <div className="logo-container">
       <img src={alkyeCompany} alt="Alkye" className="company-logo" />
-      </div>
-      <div className="logo-container">
+    </div>
+    <div className="logo-container">
       <img src={metaficCompany} alt="Metafic" className="company-logo" />
-      </div>
-      <div className="logo-container">
+    </div>
+    <div className="logo-container">
       <img src={zetaCompany} alt="Zeta" className="company-logo" />
-      </div>
-      <div className="logo-container">
+    </div>
+    <div className="logo-container">
       <img src={igCompany} alt="IG" className="company-logo" />
-      </div>
-      </div>
+    </div>
+
+    {/* Duplicate set of logos for seamless transition */}
+    <div className="logo-container">
+      <img src={verzeoCompany} alt="Verzeo" className="company-logo" />
+    </div>
+    <div className="logo-container">
+      <img src={lollypopCompany} alt="Lollypop" className="company-logo" />
+    </div>
+    <div className="logo-container">
+      <img src={alkyeCompany} alt="Alkye" className="company-logo" />
+    </div>
+    <div className="logo-container">
+      <img src={metaficCompany} alt="Metafic" className="company-logo" />
+    </div>
+    <div className="logo-container">
+      <img src={zetaCompany} alt="Zeta" className="company-logo" />
+    </div>
+    <div className="logo-container">
+      <img src={igCompany} alt="IG" className="company-logo" />
+    </div>
+  </div>
+</div>
+
+
 </div>
 
 
@@ -110,7 +134,7 @@ const Home: React.FC = () => {
 
         {/* First Project Card with OneDrive link */}
         <a 
-          href="https://ulcampus-my.sharepoint.com/my?id=%2Fpersonal%2F24035866%5Fstudentmail%5Ful%5Fie%2FDocuments%2FAttachments%2F24035866%2EMoksha%2ECS63141%2E1stAssign%2Epdf&parent=%2Fpersonal%2F24035866%5Fstudentmail%5Ful%5Fie%2FDocuments%2FAttachments" 
+          href="https://drive.google.com/file/d/17g330OsR37wWkz4GSyQVN_iFn2kvJIvZ/view?usp=sharing" 
           target="_blank" 
           rel="noopener noreferrer"
           className="project-card"
@@ -122,7 +146,7 @@ const Home: React.FC = () => {
 
         {/* Second Project Card with hyperlink */}
         <a 
-          href="https://ulcampus-my.sharepoint.com/my?id=%2Fpersonal%2F24035866%5Fstudentmail%5Ful%5Fie%2FDocuments%2FAttachments%2F24035866%2EMoksha%2ECS6431%2EAssign2%2Epdf&parent=%2Fpersonal%2F24035866%5Fstudentmail%5Ful%5Fie%2FDocuments%2FAttachments" // Replace with your actual link
+          href="https://drive.google.com/file/d/1CZR-ixYwUnk-tb-TZ4_nnJL79W_adNsD/view?usp=sharing" // Replace with your actual link
           target="_blank" 
           rel="noopener noreferrer"
           className="project-card"

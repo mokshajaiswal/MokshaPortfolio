@@ -9,6 +9,7 @@ import shutterSpeedIcon from '../assets/Icons/shutterSpeedIcon.png';
 import isoIcon from '../assets/Icons/isoIcon.png';
 import passionmain from '../assets/gallery/passionmain.png'
 import flower3 from '../assets/about/flower3.png'; 
+import InteractionWidget from '../components/InteractionWidget';
 
 
 const PassionShot: React.FC = () => {
@@ -118,6 +119,8 @@ const PassionShot: React.FC = () => {
         </p>
       </div>
     </div>
+
+    <InteractionWidget pageId="passionShot" />
 
     </div>
   );
