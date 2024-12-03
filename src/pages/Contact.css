@@ -165,3 +165,23 @@ p {
     transform: rotate(360deg);
   }
 }
+
+@media (max-width: 768px) {
+    .contact-container-main{
+        padding: 20px;
+        height: auto;
+        margin-bottom: -50px;
+    }
+
+    .contact-cards-container{
+        flex-direction: column;
+    }
+
+    .heading-headline-c{
+        margin-top: 90px;
+    }
+
+    .contact-second-section{
+        border: 0px;
+    }
+}

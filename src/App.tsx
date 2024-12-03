@@ -15,22 +15,27 @@ import ProfessionalShot from './pages/ProfessionalShot';
 import PassionShot from './pages/PassionShot';
 import Video from './pages/Video';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import menuicon from './assets/Icons/menuicon.png';
 
 import NotFound from './pages/NotFound';
 
-
-
-
-
 const App: React.FC = () => {
-  
   const homeRef = useRef<HTMLDivElement>(null); // Ref for the Home page
   const navigate = useNavigate(); // useNavigate for programmatic navigation
   const location = useLocation(); // useLocation to track the current page
-
   const [navigateToGallery, setNavigateToGallery] = useState(false); // Track when Gallery needs to scroll
   const [navigateToProject, setNavigateToProject] = useState(false); // Track when Gallery needs to scroll
+  const [isNavbarCollapsed, setIsNavbarCollapsed] = useState(true); // Track navbar collapse state
 
+  // Function to toggle the navbar collapse
+  const toggleNavbar = () => {
+    setIsNavbarCollapsed(!isNavbarCollapsed);
+  };
+
+  // Function to close the navbar
+  const closeNavbar = () => {
+    setIsNavbarCollapsed(true);
+  };
 
   // Function to scroll to the Gallery section in Home
   const scrollToGallery = () => {
@@ -55,138 +60,109 @@ const App: React.FC = () => {
   // Handle Gallery link click
   const handleGalleryClick = () => {
     if (location.pathname !== '/') {
-      // If not on the Home page, navigate to Home and then scroll to Gallery
-      setNavigateToGallery(true); // Set flag to scroll after navigation
-      navigate('/'); // Navigate to Home page
+      setNavigateToGallery(true);
+      navigate('/');
     } else {
-      // If already on the Home page, just scroll to Gallery
       scrollToGallery();
     }
+    closeNavbar();
   };
 
-
-  // Handle Gallery link click
+  // Handle Project link click
   const handleProjectClick = () => {
     if (location.pathname !== '/') {
-      // If not on the Home page, navigate to Home and then scroll to Gallery
-      setNavigateToProject(true); // Set flag to scroll after navigation
-      navigate('/'); // Navigate to Home page
+      setNavigateToProject(true);
+      navigate('/');
     } else {
-      // If already on the Home page, just scroll to Gallery
       scrollToProject();
     }
+    closeNavbar();
   };
 
   // Handle Home link click
   const handleHomeClick = () => {
     if (location.pathname === '/' || location.pathname === '/home') {
-      // If already on Home, scroll to top
       window.scrollTo({ top: 0, behavior: 'smooth' });
     } else {
-      // If not on Home, navigate to Home
       navigate('/');
     }
+    closeNavbar();
   };
 
-  // useEffect to handle scrolling to Gallery after navigating to Home
+  // useEffect to handle scrolling to Gallery or Project after navigating to Home
   useEffect(() => {
     if (navigateToGallery && location.pathname === '/') {
-      scrollToGallery(); // Scroll to Gallery when the Home page is loaded
-      setNavigateToGallery(false); // Reset the flag
+      scrollToGallery();
+      setNavigateToGallery(false);
     }
     if (navigateToProject && location.pathname === '/') {
-      scrollToProject(); // Scroll to Gallery when the Home page is loaded
-      setNavigateToProject(false); // Reset the flag
+      scrollToProject();
+      setNavigateToProject(false);
     }
-  }, [location.pathname, navigateToGallery]); // Run when location or the flag changes
+  }, [location.pathname, navigateToGallery, navigateToProject]);
 
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-dark fixed-top">
-  <div className="container d-flex justify-content-between align-items-center">
-    {/* Left-aligned profile icon */}
-    <NavLink className="navbar-brand" to="/">
-      <img src={profileIcon} alt="Profile" className="rounded-circle" width="50" />
-    </NavLink>
+      <nav className="navbar navbar-expand-md navbar-dark fixed-top">
+        <div className="container d-flex justify-content-between align-items-center">
+          <NavLink className="navbar-brand profile-container d-none d-md-block" to="/">
+            <img src={profileIcon} alt="Profile" className="nav-profile-icon" />
+          </NavLink>
 
-    {/* Toggler button for small screens */}
-    <button
-      className="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarNav"
-      aria-controls="navbarNav"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span className="navbar-toggler-icon"></span>
-    </button>
-
-    {/* Center-aligned navbar links */}
-    <div className="collapse navbar-collapse justify-content-center" id="navbarNav">
-      <ul className="navbar-nav" style={{ padding: '10px 20px' }}>
-        <li className="nav-item">
-          {/* Handle Home click */}
-          <NavLink
-            className={({ isActive }) =>
-              (isActive || location.pathname === '/home') ? 'nav-link active' : 'nav-link'
-            }
-            to="/"
-            style={{ cursor: 'pointer' }}
-          >
-            <button className="btn nav-link" onClick={handleHomeClick} style={{ cursor: 'pointer' }}>
-              {location.pathname === '/' || location.pathname === '/home' ? (
-                <img src={home} className="home-active" alt="Home" />
-              ) : (
-                <img src={homeoutline} className="home-inactive" alt="Home" />
-              )}
-            </button>
-          </NavLink>
-        </li>
-        <li className="nav-item">
-          <NavLink className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')} to="/about" style={{ color: 'black' }}>
-            About
-          </NavLink>
-        </li>
-        <li className="nav-item">
-          <NavLink className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')} to="/experience" style={{ color: 'black' }}>
-            Experience
-          </NavLink>
-        </li>
-        <li className="nav-item">
+          {/* Toggler button for smaller screens */}
           <button
-            className={`btn nav-link ${location.pathname === '/project' ? 'active' : ''}`}
-            onClick={handleProjectClick}
-            style={{ cursor: 'pointer', color: 'black' }}
+            className="navbar-toggler d-lg-none"
+            type="button"
+            aria-controls="navbarNav"
+            aria-expanded={!isNavbarCollapsed}
+            aria-label="Toggle navigation"
+            onClick={toggleNavbar}
           >
-            Project
+           <img src={menuicon} className="navbar-toggler-icon" alt="Toggle Navigation" style={{ width: '55px', height: '55px' }} />
           </button>
-        </li>
-        <li className="nav-item">
-          <button
-            className={`btn nav-link ${
-              location.pathname === '/aestheticshot' ||
-              location.pathname === '/ProfessionalShot' ||
-              location.pathname === '/Video' ||
-              location.pathname === '/PassionShot'
-                ? 'active'
-                : ''
-            }`}
-            onClick={handleGalleryClick}
-            style={{ cursor: 'pointer', color: 'black' }}
-          >
-            Gallery
-          </button>
-        </li>
-      </ul>
-    </div>
 
-    {/* Right-side Contact button */}
-    <NavLink className="butn" to="/contact">
-      Contact
-    </NavLink>
-  </div>
-</nav>
+          {/* Collapsible navbar links */}
+          <div className={`collapse navbar-collapse ${isNavbarCollapsed ? '' : 'show'}`} id="navbarNav">
+           <ul className="navbar-nav" style={{ padding: '10px 20px' }}>
+              <li className="nav-item">
+                <NavLink className="nav-link" to="/" onClick={handleHomeClick}>
+                  <button className="btn nav-link" style={{ cursor: 'pointer' }}>
+                    {location.pathname === '/' || location.pathname === '/home' ? (
+                      <img src={home} className="home-active" alt="Home" />
+                    ) : (
+                      <img src={homeoutline} className="home-inactive" alt="Home" />
+                    )}
+                  </button>
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink className="nav-link" to="/about" style={{ color: 'black' }} onClick={closeNavbar}>
+                  About
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink className="nav-link" to="/experience" style={{ color: 'black' }} onClick={closeNavbar}>
+                  Experience
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <button className="btn nav-link" onClick={handleProjectClick} style={{ cursor: 'pointer', color: 'black' }}>
+                  Project
+                </button>
+              </li>
+              <li className="nav-item">
+                <button className="btn nav-link" onClick={handleGalleryClick} style={{ cursor: 'pointer', color: 'black' }}>
+                  Gallery
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <NavLink className="butn" to="/contact" onClick={closeNavbar}>
+            Contact
+          </NavLink>
+        </div>
+      </nav>
 
       {/* Main Content */}
       <div className="main-content" ref={homeRef}>
@@ -198,27 +174,21 @@ const App: React.FC = () => {
           <Route path="/project" element={<Project />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/aestheticshot" element={<AestheticShot />} />
-          <Route path="/professionalshot" element={<ProfessionalShot/>} />
-          <Route path="/passionshot" element={<PassionShot/>} />
-          
-          <Route path="/video" element={<Video/>} />
-          
-        	
-	  {/* Catch-all route to handle unknown routes */}
+          <Route path="/professionalshot" element={<ProfessionalShot />} />
+          <Route path="/passionshot" element={<PassionShot />} />
+          <Route path="/video" element={<Video />} />
           <Route path="*" element={<NotFound />} />
-
-
         </Routes>
       </div>
 
-      {/* Footer (visible on all pages) */}
-  <footer className="footer">
-  <div className="footer-container text-center">
-    <img src={flower} className="flower-image" /><p>@2024 Moksha Jaiswal. All Rights Reserved.</p><img src={flower} className="flower-image" />
-    
-  </div>
-</footer>
-
+      {/* Footer */}
+      <footer className="footer">
+        <div className="footer-container text-center">
+          <img src={flower} className="flower-image" />
+          <p>@2024 Moksha Jaiswal. All Rights Reserved.</p>
+          <img src={flower} className="flower-image" />
+        </div>
+      </footer>
     </div>
   );
 };

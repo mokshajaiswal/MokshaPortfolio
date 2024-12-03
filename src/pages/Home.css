@@ -56,6 +56,7 @@
   flex-direction: column;
   margin: 0 auto; /* Ensure horizontal centering */ 
   max-width: 1080px; /* Limit the width to 1080px */
+  width: 100vw;
   box-sizing: border-box; /* Include padding in the width/height */
   padding-top: 250px; /* Padding for small screens */
  
@@ -221,6 +222,7 @@
 .projects-card-container{
   position:absolute;
   display: flex;
+
   gap: 40px;
 }
 
@@ -759,6 +761,170 @@ img {
   }
 }
 
+
+/* Apply for devices with a width of 768px or less */
+@media (max-width: 768px) {
+
+img {
+  max-width: 100%;
+  height: auto; /* Maintain aspect ratio */
+}
+
+
+.project-image {
+  width: 80%;
+  height: auto;
+  border-radius: 30px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+
+  .home-container {
+    padding-top: 150px; /* Reduce top padding for mobile */
+    padding-left: 10px; /* Add horizontal padding for small screens */
+    padding-right: 10px;
+  }
+
+
+
+
+  .projects-section{
+    margin:0;
+    padding:0;
+  }
+
+  .headline {
+    font-size: 2rem; /* Reduce headline font size */
+    width: 90%; /* Take up more width on small screens */
+  }
+
+  .subtext {
+    font-size: 1rem; /* Reduce subtext font size */
+    line-height: 1.4; /* Adjust line height for readability */
+  }
+
+  .social-links img {
+    width: 30px; /* Reduce icon size */
+    height: 30px;
+  }
+
+  .projects-section {
+      margin-top: 50px;
+    padding: 0px 10px; /* Reduce padding */
+    padding-top: 15px;
+    
+  }
+
+  .projects-title {
+      
+    font-size: 1.5rem; /* Reduce title size */
+  }
+
+  .project-name{
+      text-align: center;
+      width: 70%;
+      margin:0;
+  }
+  
+  .project-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    width: 100%; /* Make project cards full-width */
+    margin-bottom:8px; /* Add space between cards */
+    height: 270px;
+    padding: 0px; 
+  }
+   .pin{
+        display:none;
+   }
+    
+   .bush{
+       display:none;
+   }
+   
+    .plant{
+       display:none;
+   }
+
+      .arrow{
+       display:none;
+   }
+
+       .star{
+       display:none;
+   }
+
+       .stickers{
+       display:none;
+   }
+   
+   .aesthetic-label{
+         display:flex;
+         flex-direction: column;
+        
+         padding: 0;
+         margin-top: 20px;
+   }
+
+   .aestheticshot{
+       width: auto;
+       height: 100%;
+   }
+
+
+  .gallery-container {
+    margin-top: 100px; /* Reduce top margin */
+  }
+
+  .large-box {
+    height: auto; /* Adjust box height for mobile */
+    padding-bottom: 28px;
+  }
+
+  .small-box3{
+       height: auto;
+       padding-top: 20px;
+        padding-bottom: 28px;
+  }
+
+  .gallery-header {
+    font-size: 1.2rem; /* Reduce header size */
+  }
+
+  .gallery-subheader {
+    font-size: 1.5rem; /* Reduce subheader size */
+    text-align: center;
+  }
+
+  .small-box1, .small-box2, .small-box3 {
+    height: 180px; /* Adjust height of smaller boxes */
+  }
+}
+
+
+@media (max-width: 1024px) {
+    .projects-card-container{
+        gap: 20px;
+    }
+}
+
+@media (max-width: 924px) {
+    .projects-card-container{
+        gap: 10px;
+    }
+}
+
+@media (max-width: 912px) {
+     .projects-card-container{
+  position:relative;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+ 
+  }
+}
 
 
 

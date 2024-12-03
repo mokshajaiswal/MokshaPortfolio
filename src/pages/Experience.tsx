@@ -17,8 +17,8 @@ const Experience: React.FC = () => {
 
 
         {/* Headings */}
-        <div className='experience-row' style={{marginBottom: '60px'}}>
-          <div className='row1'>
+        <div className='experience-row1' style={{marginBottom: '60px'}}>
+          <div className='row1e'>
           <div className="heading-e d-flex ">
           <img src={flower3} alt="flower" className="heading-icon-e" />
           <h2 className="heading-text-e">Experience</h2>

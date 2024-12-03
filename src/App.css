@@ -8,6 +8,12 @@ body {
 
 h1, .headline {
   font-family: 'Larken', sans-serif; /* Use Larken for headings */
+   font-size: calc(1.5rem + 1vw); /* Responsive font sizes */
+}
+
+
+p {
+  font-size: 1rem; /* Adjust as necessary */
 }
 
 /* Remove default margins and paddings */
@@ -55,7 +61,7 @@ html, body, #root {
   justify-content: center;
   align-items: center;
   padding: 20px;
-  margin-left: 40px; /* Remove default margin */
+  margin-left: 20px; /* Remove default margin */
   list-style-type: none; /* Remove bullet points */
   display: flex; /* Ensure horizontal layout */
   gap: 20px; /* Space between nav items */
@@ -111,13 +117,10 @@ html, body, #root {
   transform: translate(-50%, -50%) scale(1.5); /* Center the image */
 }
 
-/* Mobile view adjustments for navbar */
-@media (max-width: 991px) {
-  .navbar-nav {
-    flex-direction: column; /* Stack links vertically on smaller screens */
-    align-items: center; /* Center the items */
-  }
+.navbar-expand-md .navbar-collapse{
+    justify-content: center;
 }
+
 
 .navbar-nav .nav-item .nav-link.active {
   position: relative;
@@ -135,6 +138,10 @@ html, body, #root {
   background-color: #000; /* Color of the circle */
   border-radius: 50%;
 }
+
+
+
+
 
 .nav-item {
   color: black;
@@ -259,3 +266,114 @@ color: #000;
   margin-left: 15px; /* Add margin to separate from toggler */
 }
 
+
+
+
+
+
+
+/* Mobile view adjustments for navbar */
+@media (max-width: 768px) {
+            .home-container{
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+
+            .main-content {
+                width: 100vw;
+                /* Add padding for small screens */
+            }
+
+
+            /* Navbar Collapse Animation */
+            @keyframes dropdownFadeIn {
+              0% {
+                opacity: 0; /* Start fully transparent */
+                transform: translateY(-20px); /* Start slightly above */
+              }
+              100% {
+                opacity: 1; /* Fully visible */
+                transform: translateY(0); /* Move to original position */
+              }
+            }
+
+            .navbar-collapse {
+              position: absolute; /* Ensure it overlays content */
+              top: 100%; /* Place it right below the navbar */
+              left: 4%; /* Start at the left edge */
+              width:40%; /* Full width on mobile */
+              background-color: #DDDDDC; /* Background for better visibility */
+              z-index: 1050; /* Ensure it appears above other elements */
+              max-height: 0; /* Initially collapsed */
+              overflow: hidden; /* Hide overflowing content */
+              opacity: 0; /* Start invisible */
+              visibility: hidden; /* Prevent interaction while hidden */
+              transition: max-height 0.3s ease, opacity 0.3s ease, visibility 0.3s ease; /* Smooth transitions */
+              box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for better appearance */
+              border-radius: 10px; /* Rounded corners */
+            }
+
+            .navbar-collapse.show {
+              max-height: 300px; /* Adjust based on content height */
+              opacity: 1; /* Fully visible */
+              visibility: visible; /* Enable interaction */
+              animation: dropdownFadeIn 0.3s ease; /* Dropdown animation */
+            }
+
+            /* Navbar links */
+            .navbar-nav {
+              display: flex;
+              flex-direction: column; /* Stack items vertically */
+              gap: 10px; /* Add spacing between links */
+              background-color: transparent; /* Avoid any background overlap */
+              padding: 15px; /* Add padding inside the dropdown */
+              margin: 10px 0px;
+            }
+
+            .navbar-nav .nav-item {
+              margin: 0; /* Remove default margin */
+            }
+
+            .navbar-nav .nav-link {
+              font-family: 'Hellr'; /* Consistent font */
+              padding: 8px 15px; /* Add padding for better touch targets */
+              text-align: left; /* Left-align text */
+              color: #000; /* Link color */
+              transition: color 0.3s ease; /* Smooth hover effect */
+            }
+
+            .navbar-nav .nav-link:hover {
+              color: #333; /* Slightly darker color on hover */
+            }
+
+            /* Ensure Contact button stays in place */
+            .navbar .butn {
+              position: relative;
+              z-index: 1100; /* Keeps it above the navbar collapse */
+            }
+
+            /* Toggler Button */
+            .navbar-toggler {
+              z-index: 1200; /* Ensure it's always above the navbar-collapse */
+              margin-right: auto; /* Push the toggler to the left */
+              background-color: #000;
+            }
+
+            .home-active{
+                height: 20px;
+               
+            }
+             .home-inactive{
+                height: 20px;
+               
+            }
+
+            .navbar-nav .nav-item .nav-link.active::after 
+            {
+            top: 45%;
+            left: 0%;
+
+            }
+
+           
+          }
