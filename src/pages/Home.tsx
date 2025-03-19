@@ -14,6 +14,7 @@ import flower from '../assets/Icons/flower.png';
 import project1 from '../assets/project/p1image.png';
 import project2 from '../assets/project/p2image.png';
 import project3 from '../assets/project/p3image.png';
+import project4 from '../assets/project/p4image.png';
 import aestheticshot from  '../assets/gallery/aestheticshot.png';
 import headshot from  '../assets/gallery/headshot.png';
 import passion from  '../assets/gallery/passionshot.png';
@@ -155,11 +156,26 @@ const Home: React.FC = () => {
           <img src={project2} alt="Quantitative Research" className="project-image" />
           <p className="project-name" style={{ fontFamily: 'Hellm' }}>Semi Structured Interview Research</p>
         </a>
+         
 
-        <div className="project-card">
-          <img src={project1} alt="Project Name 3" className="project-image" />
-          <p className="project-name"style={{ fontFamily: 'Hellm' }} >Coming Soon</p>
-        </div>
+         {/* Third Project Card with hyperlink */}
+        <a 
+          href="https://medium.com/@mokshajaiswal99" // Replace with your actual link
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="project-card"
+          style={{ textDecoration: 'none' }} // Optional: Remove underline
+        >
+          <img src={project4} alt="interative design" className="project-image" />
+          <p className="project-name" style={{ fontFamily: 'Hellm' }}>Interative Design with various technologies</p>
+        </a>
+
+
+
+
+
+
+
         <div className="project-card">
           <img src={project1} alt="Project Name 4" className="project-image" />
           <p className="project-name" style={{ fontFamily: 'Hellm' }}>Coming Soon</p>
